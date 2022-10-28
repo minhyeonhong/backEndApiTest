@@ -130,7 +130,8 @@
                 reader.readAsDataURL(file);
             });
 
-            //formData에 이미지 파일들 담기
+            //formData에 이미지 파일들 담기 
+            //11.파일 키 바꾸실때
             formData.append("files", uploadFiles);
         }
 
@@ -155,6 +156,8 @@
 
             //formData에 Data파싱해서 넣기
             console.log("data 찍어봄",JSON.stringify(dataObj));
+
+            //22.파일이랑 같이 올릴때 data 키 바꾸실때
             formData.append("data", JSON.stringify(dataObj));
 
             //엑시오스
